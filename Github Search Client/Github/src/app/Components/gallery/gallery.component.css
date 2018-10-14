@@ -1,0 +1,20 @@
+.github_item_name {
+    color: white;
+    word-break: break-all;
+}
+
+.wrapper_button {
+    display: block;
+    margin: auto;
+}
+
+.github_item_button{
+    width:75%;
+    cursor: pointer;
+}
+
+.avatar_url {
+    width: 170px;
+    height: 150px;
+    opacity: 0.95;
+}

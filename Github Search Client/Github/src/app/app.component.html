@@ -1,0 +1,13 @@
+<div class="homepage container-fluid">
+    <div class="row mb-5 github-search">
+        <input #searchTerm class="col" type="text" placeholder="Search, search, hurry up and search">
+        <button class="col-1" (click)="search(searchTerm.value)"> Search </button>
+        <button *ngIf="!bookmarkPage" class="col-1" (click)="showBookMarks()"> Bookmark Page </button>
+        <button *ngIf="bookmarkPage" class="col-1" (click)="homePage()"> Homepage Page </button>
+    </div>
+    
+    <app-gallery *ngIf="!bookmarkPage" [data]="githubResults" [isBookmark]="bookmarkPage" (notify)="addBookmark($event)"> </app-gallery>
+    <app-gallery *ngIf="bookmarkPage" [data]="bookmarks" [isBookmark]="bookmarkPage"> </app-gallery>
+
+    <ngx-loading [show]="gettingData"> </ngx-loading>
+</div>

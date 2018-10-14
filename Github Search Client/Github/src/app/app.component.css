@@ -1,0 +1,14 @@
+.homepage {
+    background: url('https://wallpaper-house.com/data/out/8/wallpaper2you_237163.jpg') no-repeat center center fixed;
+    min-height: 100vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.github-search {
+    color: black;
+    height: 7vh;
+}
